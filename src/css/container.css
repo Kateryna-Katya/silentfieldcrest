@@ -2,7 +2,7 @@
 .container {
   max-width: 375px;
   margin: 0 auto;
-  padding: 46px 16px;
+  padding: 46px 16px 64px;
 }
 .title-container{
   background: #a6bdbf;
