@@ -1,0 +1,45 @@
+.home-section{
+    background-image: url("/img/home/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 748px;
+}
+.home-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+    margin-top: 64px;
+}
+.home-title{
+    font-family: "Prata", sans-serif;
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 1.5;
+        color: #162425;
+        text-align: left;
+}
+.home-text{
+    font-family: "Manrope", sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        line-height: 1.5;
+        color: #162425;
+        text-align: left;
+}
+@media only screen and (min-width: 1440px) {
+   .home-section{
+    background-image: url("/img/home/desk.png");
+height: 760px;
+   }
+   .home-wrapper{
+    width: 684px;
+   }
+   .home-title{
+    font-size: 64px;
+   }
+   .home-text{
+    font-size: 32px;
+   }
+}
