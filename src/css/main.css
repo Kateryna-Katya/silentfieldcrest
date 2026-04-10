@@ -184,3 +184,50 @@ font-size: 12px;
 
 }
 }
+/* Gallery */
+.btn {
+    display: none;
+}
+
+@media only screen and (min-width: 1440px) {
+    .gallery-container {
+        position: relative;
+    }
+
+    .btn {
+        display: block;
+        border-radius: 100px;
+        border: inherit;
+        background-color: rgba(0, 116, 123, 0.5);
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+    }
+.btn:hover{
+background-color: rgba(0, 116, 123, 0.8);
+}
+
+    .gallery-swiper {
+        width: 1030px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .gallery-next {
+        right: 6%;
+        z-index: 2;
+    }
+
+    .gallery-prev {
+        left: 9%;
+        z-index: 2;
+    }
+}
