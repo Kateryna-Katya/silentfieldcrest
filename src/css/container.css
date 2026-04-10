@@ -5,7 +5,7 @@
   padding: 46px 16px;
 }
 .title-container{
-  padding: 64px 16px 16px;
+  background: #a6bdbf;
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
@@ -13,7 +13,5 @@
     max-width: 1440px;
     padding: 64px 80px 64px 120px;
   }
-.title-container {
-  padding: 64px 120px 16px;
-}
+
 }

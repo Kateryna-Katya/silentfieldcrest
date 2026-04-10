@@ -11,8 +11,6 @@ h2{
   font-family: "Prata", sans-serif;
     font-weight: 400;
     font-size: 24px;
-  
-    /* line-height: 36px; */
     line-height: 1.5;
     color: #2a3c3d;
 }
@@ -24,4 +22,16 @@ h3{
     text-align: center;
     color: #162425;
    margin-bottom: 40px;
+}
+@media only screen and (min-width: 1440px) {
+  body{
+    font-size: 16px;
+  }
+  h2{
+font-size: 32px;
+text-align: left;
+  }
+  h3{
+    font-size: 24px;
+  }
 }
