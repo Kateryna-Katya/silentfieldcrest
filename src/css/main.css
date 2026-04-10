@@ -55,18 +55,68 @@ height: 760px;
     padding-top: 64px;
     padding-bottom: 16px;
 }
-.mob{
-    display: none;
-}
-.about-text{
-    width: 869px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
+
 @media only screen and (min-width: 1440px) {
 .about-section {
         background-image: url("/img/about/desk.png");
         background-size: 100% 804px;
 height: 1208px;
     }
+ .mob {
+     display: none;
+ }
+    .about-text{
+    width: 869px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+/* Growth Mechanics */
+.growth-section{
+    background-image: url("/img/growth/mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 286px;
+    height: 791px;
+}
+.growth-text{
+    width: 303px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.core-swiper .swiper-slide{
+    border-radius: 0 0 16px 16px;
+        padding: 32px;
+        width: 210px;
+        height: 94px;
+        background: linear-gradient(180deg, #f0f5f5 0%, #d8d0d7 100%);
+        font-size: 10px;
+}
+.desk{
+    display: none;
+}
+@media only screen and (min-width: 1440px) {
+ .growth-section{
+ background-image: url("/img/growth/desk.png");
+    background-size: 100% 516px;
+    height: 1036px;
+ }
+ .desk {
+     display: block;
+ }
+ .growth-text{
+    width: 100%;
+ }
+ .core-swiper .swiper-wrapper{
+    justify-content: center;
+    gap: 32px;
+ }
+ .core-swiper .swiper-slide {
+padding: 32px 64px;
+width: 280px;
+    height: 100px;
+font-size: 12px;
+ }
 }
