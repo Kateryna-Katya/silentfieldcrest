@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 let coreSwiper = null;
 let gallerySwiper = null;
+let featuresSwiper = null;
 
 function initSwipers() {
   const width = window.innerWidth;
@@ -28,6 +29,26 @@ function initSwipers() {
     coreSwiper = null;
   }
 
+      // ---------------- features ----------------
+  if (width < 1440 && !featuresSwiper) {
+    featuresSwiper = new Swiper('.features-swiper', {
+      modules: [Autoplay],
+      slidesPerView: 2.6,
+      spaceBetween: 16,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  }
+
+  if (width >= 1440 && featuresSwiper) {
+    featuresSwiper.destroy(true, true);
+    featuresSwiper = null;
+  }
+    
+    
   // ---------------- GALLERY ----------------
   if (!gallerySwiper) {
     gallerySwiper = new Swiper('.gallery-swiper', {
